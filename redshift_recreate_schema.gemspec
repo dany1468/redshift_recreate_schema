@@ -29,7 +29,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "pg", ">= 0.18"
+
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec-power_assert"
+  spec.add_development_dependency "pry"
+  spec.add_development_dependency "tapp"
+  spec.add_development_dependency "tapp-awesome_print"
 end
